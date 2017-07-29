@@ -1,12 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
+
 
 import { AppComponent } from './components/app/app.component'
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
 
 import { GoogleMapsComponent } from './components/google-maps/google-maps.component';
-import { AboutusComponent} from './components/aboutus/aboutus.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
+
+import { Ng4GeoautocompleteModule } from 'ng4-geoautocomplete';
+import { AgmCoreModule } from '@agm/core';
+
+
 
 export const sharedConfig: NgModule = {
     bootstrap: [ AppComponent ],
@@ -18,6 +25,11 @@ export const sharedConfig: NgModule = {
         AboutusComponent
     ],
     imports: [
+        Ng4GeoautocompleteModule,
+        BrowserModule,
+        AgmCoreModule.forRoot({
+            apiKey: 'AIzaSyArBWWM7UHwSf6kNTHMBHsutcENPmsnIZM'
+        }),
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
