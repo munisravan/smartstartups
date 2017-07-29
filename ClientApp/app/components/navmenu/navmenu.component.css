@@ -1,7 +1,9 @@
 li .glyphicon {
     margin-right: 10px;
 }
-
+.navbar-inverse{
+    background-color:lightgreen !important;
+}
 /* Highlighting rules for nav menu items */
 li.link-active a,
 li.link-active a:hover,
