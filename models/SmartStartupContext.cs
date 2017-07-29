@@ -11,8 +11,7 @@ namespace Smartstartups.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-NTUSR11\SQLEXPRESS;Database=SmartStartup;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=VASUNDHARA;Database=SmartStartup;Trusted_Connection=True;User ID=sharkdb;Password=shark2017;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

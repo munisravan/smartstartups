@@ -11,7 +11,6 @@ import { GoogleMapsComponent } from './components/google-maps/google-maps.compon
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 
 import { Ng4GeoautocompleteModule } from 'ng4-geoautocomplete';
-import { AgmCoreModule } from '@agm/core';
 
 
 
@@ -27,9 +26,7 @@ export const sharedConfig: NgModule = {
     imports: [
         Ng4GeoautocompleteModule,
         BrowserModule,
-        AgmCoreModule.forRoot({
-            apiKey: 'AIzaSyArBWWM7UHwSf6kNTHMBHsutcENPmsnIZM'
-        }),
+       
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
