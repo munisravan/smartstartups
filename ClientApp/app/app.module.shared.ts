@@ -4,8 +4,6 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './components/app/app.component'
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
-import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
-import { CounterComponent } from './components/counter/counter.component';
 
 import { GoogleMapsComponent } from './components/google-maps/google-maps.component';
 import { AboutusComponent} from './components/aboutus/aboutus.component';
@@ -15,8 +13,6 @@ export const sharedConfig: NgModule = {
     declarations: [
         AppComponent,
         NavMenuComponent,
-        CounterComponent,
-        FetchDataComponent,
         HomeComponent,
         GoogleMapsComponent,
         AboutusComponent
@@ -27,7 +23,6 @@ export const sharedConfig: NgModule = {
             { path: 'home', component: HomeComponent },
             {path:'aboutus', component:AboutusComponent},
             { path: 'search', component: GoogleMapsComponent },
-            { path: 'fetch-data', component: FetchDataComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]
