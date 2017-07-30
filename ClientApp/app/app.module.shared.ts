@@ -14,7 +14,7 @@ import { Ng4GeoautocompleteModule } from 'ng4-geoautocomplete';
 
 import { MobilePrototypeComponent } from './components/mobile-prototype/mobile-prototype.component';
 
-
+import {VideoComponent } from './components/video/video.component';
 
 export const sharedConfig: NgModule = {
     bootstrap: [ AppComponent ],
@@ -24,7 +24,8 @@ export const sharedConfig: NgModule = {
         HomeComponent,
         GoogleMapsComponent,
         AboutusComponent,
-        MobilePrototypeComponent
+        MobilePrototypeComponent,
+        VideoComponent
     ],
     imports: [
         Ng4GeoautocompleteModule.forRoot(),
@@ -34,7 +35,8 @@ export const sharedConfig: NgModule = {
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
             {path:'mobile', component: MobilePrototypeComponent},
-            {path:'aboutus', component:AboutusComponent},
+            { path: 'aboutus', component: AboutusComponent },
+            {path:'video', component:VideoComponent},
             { path: 'search', component: GoogleMapsComponent },
             { path: '**', redirectTo: 'home' }
         ])

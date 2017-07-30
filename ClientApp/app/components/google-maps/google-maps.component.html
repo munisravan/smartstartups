@@ -6,19 +6,231 @@
             <br/>
             <br />
             <div id="custom-search-input col-md-3">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                    Dropdown Example
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                </ul>
-                <div class="input-group col-md-8">
-                    <ng4geo-autocomplete [userSettings]="userSettings" (componentCallback)="autoCompleteCallback1($event)"></ng4geo-autocomplete>                    <span class="input-group-btn">
-                        
-                    </span>
+                
+                    <div class="col-sm-12 pull-center well">
+                      <table>
+                          <tr><td class="col-sm-3 input-lg" ><select name="Industry" class="form-control"style="height:50px !important">
+    <option value="011">Nursery & Floriculture Production</option>
+    <option value="012">Mushroom & Vegetable Growing</option>
+    <option value="013">Fruit & Tree Nut Growing</option>
+    <option value="014">Sheep, Beef Cattle & Grain Farming</option>
+    <option value="015">Other Crop Growing</option>
+    <option value="016">Dairy Cattle Farming</option>
+    <option value="017">Poultry Farming</option>
+    <option value="018">Deer Farming</option>
+    <option value="019">Other Livestock Farming</option>
+    <option value="020">Aquaculture</option>
+    <option value="030">Forestry & Logging</option>
+    <option value="041">Fishing</option>
+    <option value="042">Hunting & Trapping</option>
+    <option value="051">Forestry Support Services</option>
+    <option value="052">Agriculture & Fishing Support Services</option>
+    <option value="060">Coal Mining</option>
+    <option value="070">Oil & Gas Extraction</option>
+    <option value="080">Metal Ore Mining</option>
+    <option value="091">Construction Material Mining</option>
+    <option value="099">Other Non-Metallic Mineral Mining & Quarrying</option>
+    <option value="101">Exploration</option>
+    <option value="109">Other Mining Support Services</option>
+    <option value="111">Meat & Meat Product Manufacturing</option>
+    <option value="112">Seafood Processing</option>
+    <option value="113">Dairy Product Manufacturing</option>
+    <option value="114">Fruit & Vegetable Processing</option>
+    <option value="115">Oil & Fat Manufacturing</option>
+    <option value="116">Grain Mill & Cereal Product Manufacturing</option>
+    <option value="117">Bakery Product Manufacturing</option>
+    <option value="118">Sugar & Confectionery Manufacturing</option>
+    <option value="119">Other Food Product Manufacturing</option>
+    <option value="121">Beverage Manufacturing</option>
+    <option value="122">Cigarette & Tobacco Product Manufacturing</option>
+    <option value="131">Textile Manufacturing</option>
+    <option value="132">Leather Tanning, Fur Dressing & Leather Product Manufacturing</option>
+    <option value="133">Textile Product Manufacturing</option>
+    <option value="134">Knitted Product Manufacturing</option>
+    <option value="135">Clothing & Footwear Manufacturing</option>
+    <option value="141">Log Sawmilling & Timber Dressing</option>
+    <option value="149">Other Wood Product Manufacturing</option>
+    <option value="151">Pulp, Paper & Paperboard Manufacturing</option>
+    <option value="152">Converted Paper Product Manufacturing</option>
+    <option value="161">Printing & Printing Support Services</option>
+    <option value="162">Reproduction of Recorded Media</option>
+    <option value="170">Petroleum & Coal Product Manufacturing</option>
+    <option value="181">Basic Chemical Manufacturing</option>
+    <option value="182">Basic Polymer Manufacturing</option>
+    <option value="183">Fertiliser & Pesticide Manufacturing</option>
+    <option value="184">Pharmaceutical & Medicinal Product Manufacturing</option>
+    <option value="185">Cleaning Compound & Toiletry Preparation Manufacturing</option>
+    <option value="189">Other Basic Chemical Product Manufacturing</option>
+    <option value="191">Polymer Product Manufacturing</option>
+    <option value="192">Natural Rubber Product Manufacturing</option>
+    <option value="201">Glass & Glass Product Manufacturing</option>
+    <option value="202">Ceramic Product Manufacturing</option>
+    <option value="203">Cement, Lime, Plaster & Concrete Product Manufacturing</option>
+    <option value="209">Other Non-Metallic Mineral Product Manufacturing</option>
+    <option value="211">Basic Ferrous Metal Manufacturing</option>
+    <option value="212">Basic Ferrous Metal Product Manufacturing</option>
+    <option value="213">Basic Non-Ferrous Metal Manufacturing</option>
+    <option value="214">Basic Non-Ferrous Metal Product Manufacturing</option>
+    <option value="221">Iron & Steel Forging</option>
+    <option value="222">Structural Metal Product Manufacturing</option>
+    <option value="223">Metal Container Manufacturing</option>
+    <option value="224">Sheet Metal Product Manufacturing (except Metal Structural & Container Products)</option>
+    <option value="229">Other Fabricated Metal Product Manufacturing</option>
+    <option value="231">Motor Vehicle & Motor Vehicle Part Manufacturing</option>
+    <option value="239">Other Transport Equipment Manufacturing</option>
+    <option value="241">Professional & Scientific Equipment Manufacturing</option>
+    <option value="242">Computer & Electronic Equipment Manufacturing</option>
+    <option value="243">Electrical Equipment Manufacturing</option>
+    <option value="244">Domestic Appliance Manufacturing</option>
+    <option value="245">Pump, Compressor, Heating & Ventilation Equipment Manufacturing</option>
+    <option value="246">Specialised Machinery & Equipment Manufacturing</option>
+    <option value="249">Other Machinery & Equipment Manufacturing</option>
+    <option value="251">Furniture Manufacturing</option>
+    <option value="259">Other Manufacturing</option>
+    <option value="261">Electricity Generation</option>
+    <option value="262">Electricity Transmission</option>
+    <option value="263">Electricity Distribution</option>
+    <option value="264">On Selling Electricity & Electricity Market Operation</option>
+    <option value="270">Gas Supply</option>
+    <option value="281">Water Supply, Sewerage & Drainage Services</option>
+    <option value="291">Waste Collection Services</option>
+    <option value="292">Waste Treatment, Disposal & Remediation Services</option>
+    <option value="301">Residential Building Construction</option>
+    <option value="302">Non-Residential Building Construction</option>
+    <option value="310">Heavy & Civil Engineering Construction</option>
+    <option value="321">Land Development & Site Preparation Services</option>
+    <option value="322">Building Structure Services</option>
+    <option value="323">Building Installation Services</option>
+    <option value="324">Building Completion Services</option>
+    <option value="329">Other Construction Services</option>
+    <option value="331">Agricultural Product Wholesaling</option>
+    <option value="332">Mineral, Metal & Chemical Wholesaling</option>
+    <option value="333">Timber & Hardware Goods Wholesaling</option>
+    <option value="341">Specialised Industrial Machinery & Equipment Wholesaling</option>
+    <option value="349">Other Machinery & Equipment Wholesaling</option>
+    <option value="350">Motor Vehicle & Motor Vehicle Parts Wholesaling</option>
+    <option value="360">Grocery, Liquor & Tobacco Product Wholesaling</option>
+    <option value="371">Textile, Clothing & Footwear Wholesaling</option>
+    <option value="372">Pharmaceutical & Toiletry Goods Wholesaling</option>
+    <option value="373">Furniture, Floor Covering & Other Goods Wholesaling</option>
+    <option value="380">Commission-Based Wholesaling</option>
+    <option value="391">Motor Vehicle Retailing</option>
+    <option value="392">Motor Vehicle Parts & Tyre Retailing</option>
+    <option value="400">Fuel Retailing</option>
+    <option value="411">Supermarket & Grocery Stores</option>
+    <option value="412">Specialised Food Retailing</option>
+    <option value="421">Furniture, Floor Coverings, Houseware & Textile Goods Retailing</option>
+    <option value="422">Electrical & Electronic Goods Retailing</option>
+    <option value="423">Hardware, Building & Garden Supplies Retailing</option>
+    <option value="424">Recreational Goods Retailing</option>
+    <option value="425">Clothing, Footwear & Personal Accessory Retailing</option>
+    <option value="426">Department Stores</option>
+    <option value="427">Pharmaceutical & Other Store-Based Retailing</option>
+    <option value="431">Non-Store Retailing</option>
+    <option value="432">Retail Commission-Based Buying and/or Selling</option>
+    <option value="440">Accommodation</option>
+    <option value="451">Cafes, Restaurants & Takeaway Food Services</option>
+    <option value="452">Pubs, Taverns & Bars</option>
+    <option value="453">Clubs (Hospitality)</option>
+    <option value="461">Road Freight Transport</option>
+    <option value="462">Road Passenger Transport</option>
+    <option value="471">Rail Freight Transport</option>
+    <option value="472">Rail Passenger Transport</option>
+    <option value="481">Water Freight Transport</option>
+    <option value="482">Water Passenger Transport</option>
+    <option value="490">Air & Space Transport</option>
+    <option value="501">Scenic & Sightseeing Transport</option>
+    <option value="502">Pipeline & Other Transport</option>
+    <option value="510">Postal & Courier Pick-up & Delivery Services</option>
+    <option value="521">Water Transport Support Services</option>
+    <option value="522">Airport Operations & Other Air Transport Support Services</option>
+    <option value="529">Other Transport Support Services</option>
+    <option value="530">Warehousing & Storage Services</option>
+    <option value="541">Newspaper, Periodical, Book & Directory Publishing</option>
+    <option value="542">Software Publishing</option>
+    <option value="551">Motion Picture & Video Activities</option>
+    <option value="552">Sound Recording & Music Publishing</option>
+    <option value="561">Radio Broadcasting</option>
+    <option value="562">Television Broadcasting</option>
+    <option value="570">Internet Publishing & Broadcasting</option>
+    <option value="580">Telecommunications Services</option>
+    <option value="591">Internet Service Providers & Web Search Portals</option>
+    <option value="592">Data Processing, Web Hosting & Electronic Information Storage Services</option>
+    <option value="601">Libraries & Archives</option>
+    <option value="602">Other Information Services</option>
+    <option value="621">Central Banking</option>
+    <option value="622">Depository Financial Intermediation</option>
+    <option value="623">Non-Depository Financing</option>
+    <option value="624">Financial Asset Investing</option>
+    <option value="631">Life Insurance</option>
+    <option value="632">Health & General Insurance</option>
+    <option value="633">Superannuation Funds</option>
+    <option value="641">Auxiliary Finance & Investment Services</option>
+    <option value="642">Auxiliary Insurance Services</option>
+    <option value="661">Motor Vehicle & Transport Equipment Rental & Hiring</option>
+    <option value="662">Farm Animal & Bloodstock Leasing</option>
+    <option value="663">Other Goods & Equipment Rental & Hiring</option>
+    <option value="664">Non-Financial Intangible Assets (Except Copyrights) Leasing</option>
+    <option value="671">Property Operators</option>
+    <option value="672">Real Estate Services</option>
+    <option value="691">Scientific Research Services</option>
+    <option value="692">Architectural, Engineering & Technical Services</option>
+    <option value="693">Legal & Accounting Services</option>
+    <option value="694">Advertising Services</option>
+    <option value="695">Market Research & Statistical Services</option>
+    <option value="696">Management & Related Consulting Services</option>
+    <option value="697">Veterinary Services</option>
+    <option value="699">Other Professional, Scientific & Technical Services</option>
+    <option value="700">Computer System Design & Related Services</option>
+    <option value="721">Employment Services</option>
+    <option value="722">Travel Agency & Tour Arrangement Services</option>
+    <option value="729">Other Administrative Services</option>
+    <option value="731">Building Cleaning, Pest Control & Gardening Services</option>
+    <option value="732">Packaging Services</option>
+    <option value="751">Central Government Administration</option>
+    <option value="752">State Government Administration</option>
+    <option value="753">Local Government Administration</option>
+    <option value="754">Justice</option>
+    <option value="755">Government Representation</option>
+    <option value="760">Defence</option>
+    <option value="771">Public Order & Safety Services</option>
+    <option value="772">Regulatory Services</option>
+    <option value="801">Preschool Education</option>
+    <option value="802">School Education</option>
+    <option value="810">Tertiary Education</option>
+    <option value="821">Adult, Community & Other Education</option>
+    <option value="822">Educational Support Services</option>
+    <option value="840">Hospitals</option>
+    <option value="851">Medical Services</option>
+    <option value="852">Pathology & Diagnostic Imaging Services</option>
+    <option value="853">Allied Health Services</option>
+    <option value="859">Other Health Care Services</option>
+    <option value="860">Residential Care Services</option>
+    <option value="871" selected="selected">Child Care Services</option>
+    <option value="879">Other Social Assistance Services</option>
+    <option value="891">Museum Operation</option>
+    <option value="892">Parks & Gardens Operations</option>
+    <option value="900">Creative & Performing Arts Activities</option>
+    <option value="911">Sports & Physical Recreation Activities</option>
+    <option value="912">Horse & Dog Racing Activities</option>
+    <option value="913">Amusement & Other Recreation Activities</option>
+    <option value="920">Gambling Activities</option>
+    <option value="941">Automotive Repair & Maintenance</option>
+    <option value="942">Machinery & Equipment Repair & Maintenance</option>
+    <option value="949">Other Repair & Maintenance</option>
+    <option value="951">Personal Care Services</option>
+    <option value="952">Funeral, Crematorium & Cemetery Services</option>
+    <option value="953">Other Personal Services</option>
+    <option value="954">Religious Services</option>
+    <option value="955">Civic, Professional & Other Interest Group Services</option>
+    <option value="960">Private Households Employing Staff & Undifferentiated Goods & Service-Producing Activities of Households for Own Use</option>
+</select></td><td class="co-sm-8"><ng4geo-autocomplete [userSettings]="userSettings" (componentCallback)="autoCompleteCallback1($event)">Search Location</ng4geo-autocomplete>                    <span class="input-group-btn">
+
+</span></td></tr>
+                       
+                    
+                </table>
+                    
                 </div>
             </div>
         </div>
@@ -35,12 +247,11 @@
                                 </a>
                             </div>
                             <div class="col-md-2">
-                                <div class="lib-row lib-header">
-                                    Example library
-                                    <div class="lib-header-seperator"></div>
-                                </div>
+                               
                                 <div class="lib-row lib-desc">
-                                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                                     <br/>
+                                    If you are thinking of starting a childcare center. You can start looking at the number of children aged 0-4 years living in the area.
+
                                 </div>
                             </div>
                         </div>
@@ -53,37 +264,64 @@
                             <div class="row box-shadow">
                                 <div class="col-md-8">
                                     <a data-toggle="modal" data-target=".pop-up-1">
-                                        <img class="lib-img-show" src="../../../images/childcare.jpg" />
+                                        <img class="lib-img-show" src="../../../images/childcare1.jpg" />
 
                                     </a>
                                 </div>
                                 <div class="col-md-2">
-                                    <div class="lib-row lib-header">
-                                        Example library
-                                        <div class="lib-header-seperator"></div>
-                                    </div>
+                                   
                                     <div class="lib-row lib-desc">
-                                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                                        <br/>
+                                        If you are thinking of starting a childcare center. You can start looking at the number of children aged 0-4 years living in the area.
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="row row-margin-bottom">
+                        <div class="col-md-10 no-padding lib-item" data-category="view">
+                            <div class="lib-panel">
+                                <div class="row box-shadow">
+                                    <div class="col-md-8">
+                                        <a data-toggle="modal" data-target=".pop-up-1">
+                                            <img class="lib-img-show" src="../../../images/Agedcare.jpg" />
+
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="lib-row lib-desc">
+                                            <br/>
+                                            If you are thinking of starting an aged care facility. You can start looking at the number of elders aged over 60 in the area.
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-margin-bottom">
+                            <div class="col-md-10 no-padding lib-item" data-category="view">
+                                <div class="lib-panel">
+                                    <div class="row box-shadow">
+                                        <div class="col-md-8">
+                                            <a data-toggle="modal" data-target=".pop-up-1">
+                                                <img class="lib-img-show" src="../../../images/Untitled.jpg" />
+
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            
+                                            <div class="lib-row lib-desc">
+                                                <br/>
+                                                Once you decide where to start the business you can scan the area to find out the community profile of the relevant geographical location
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
-                </div>
-
-        <div class="span4">
-            <h2>Snail mail</h2>
-            <address>
-                <strong>Hythe Window Cleaning</strong><br>
-                15 Springfield Way<br>
-                Hythe<br>
-                Kent<br>
-                United Kingdon<br>
-                CT21 5SH<br>
-                <abbr title="Phone">P:</abbr> 01234 567 890
-            </address>
-        </div>
+                       </div>        
     </div>
 </div>
