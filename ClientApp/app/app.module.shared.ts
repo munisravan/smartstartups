@@ -24,7 +24,7 @@ export const sharedConfig: NgModule = {
         AboutusComponent
     ],
     imports: [
-        Ng4GeoautocompleteModule,
+        Ng4GeoautocompleteModule.forRoot(),
         BrowserModule,
        
         RouterModule.forRoot([

@@ -30,6 +30,7 @@
     "isomorphic-fetch": "2.2.1",
     "jquery": "3.2.1",
     "json-loader": "0.5.4",
+    "local-storage": "^1.4.2",
     "ng4-geoautocomplete": "0.0.9",
     "preboot": "4.5.2",
     "raw-loader": "0.5.1",

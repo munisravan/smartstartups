@@ -7,7 +7,7 @@
             <br />
             <div id="custom-search-input">
                 <div class="input-group col-md-12">
-                    <ng4geo-autocomplete [userSettings]="userSettings"></ng4geo-autocomplete>    
+                    <ng4geo-autocomplete [userSettings]="userSettings" (componentCallback)="autoCompleteCallback1($event)"></ng4geo-autocomplete>    
                     <span class="input-group-btn">
                         
                     </span>

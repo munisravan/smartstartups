@@ -35,7 +35,8 @@ export class GoogleMapsComponent implements OnInit {
   public userSettings: any = {
       showRecentSearch: true,
       geoCountryRestriction: ['au'],
-      inputPlaceholderText: "Address"
+      inputPlaceholderText: "Address",
+      showCurrentLocation:false
 
   };
 
