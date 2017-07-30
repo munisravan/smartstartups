@@ -1,0 +1,112 @@
+body {
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f7f7;
+}
+
+.lib-panel {
+    margin-bottom: 20Px;
+}
+
+    .lib-panel img {
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .lib-panel .row,
+    .lib-panel .col-md-6 {
+        padding: 0;
+        background-color: #FFFFFF;
+    }
+
+
+    .lib-panel .lib-row {
+        padding: 0 20px 0 20px;
+    }
+
+        .lib-panel .lib-row.lib-header {
+            background-color: #FFFFFF;
+            font-size: 20px;
+            padding: 10px 20px 0 20px;
+        }
+
+            .lib-panel .lib-row.lib-header .lib-header-seperator {
+                height: 2px;
+                width: 26px;
+                background-color: #d9d9d9;
+                margin: 7px 0 7px 0;
+            }
+
+        .lib-panel .lib-row.lib-desc {
+            position: relative;
+            height: 100%;
+            display: block;
+            font-size: 13px;
+        }
+
+            .lib-panel .lib-row.lib-desc a {
+                position: absolute;
+                width: 100%;
+                bottom: 10px;
+                left: 20px;
+            }
+
+.row-margin-bottom {
+    margin-bottom: 20px;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+}
+
+.no-padding {
+    padding: 0;
+}
+body {
+    background:#f0f0f0;
+}
+.nav {
+    left:50%;
+    margin-left:-150px;
+    top:50px;
+    position:absolute;
+}
+.nav>li>a:hover, .nav>li>a:focus, .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background:#fff;
+}
+.dropdown {
+    background:#fff;
+    border:1px solid #ccc;
+    border-radius:4px;
+    width:300px;    
+}
+.dropdown-menu>li>a {
+    color:#428bca;
+}
+.dropdown ul.dropdown-menu {
+    border-radius:4px;
+    box-shadow:none;
+    margin-top:20px;
+    width:300px;
+}
+.dropdown ul.dropdown-menu:before {
+    content: "";
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    z-index: 10;
+}
+.dropdown ul.dropdown-menu:after {
+    content: "";
+    border-bottom: 12px solid #ccc;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    position: absolute;
+    top: -12px;
+    right: 14px;
+    z-index: 9;
+}

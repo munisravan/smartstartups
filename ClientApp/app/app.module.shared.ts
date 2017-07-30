@@ -12,6 +12,8 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
 
 import { Ng4GeoautocompleteModule } from 'ng4-geoautocomplete';
 
+import { MobilePrototypeComponent } from './components/mobile-prototype/mobile-prototype.component';
+
 
 
 export const sharedConfig: NgModule = {
@@ -21,7 +23,8 @@ export const sharedConfig: NgModule = {
         NavMenuComponent,
         HomeComponent,
         GoogleMapsComponent,
-        AboutusComponent
+        AboutusComponent,
+        MobilePrototypeComponent
     ],
     imports: [
         Ng4GeoautocompleteModule.forRoot(),
@@ -30,6 +33,7 @@ export const sharedConfig: NgModule = {
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
+            {path:'mobile', component: MobilePrototypeComponent},
             {path:'aboutus', component:AboutusComponent},
             { path: 'search', component: GoogleMapsComponent },
             { path: '**', redirectTo: 'home' }

@@ -5,21 +5,73 @@
             <br/>
             <br/>
             <br />
-            <div id="custom-search-input">
-                <div class="input-group col-md-12">
-                    <ng4geo-autocomplete [userSettings]="userSettings" (componentCallback)="autoCompleteCallback1($event)"></ng4geo-autocomplete>    
-                    <span class="input-group-btn">
+            <div id="custom-search-input col-md-3">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                    Dropdown Example
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+                <div class="input-group col-md-8">
+                    <ng4geo-autocomplete [userSettings]="userSettings" (componentCallback)="autoCompleteCallback1($event)"></ng4geo-autocomplete>                    <span class="input-group-btn">
                         
                     </span>
                 </div>
             </div>
         </div>
         <br/>
-        <div class="span8">
-            <div id="googleMap" style="width:500px;height:380px;"></div>
+        <div  *ngIf="visible==true">
+            <div class="row row-margin-bottom">
+                <div class="col-md-10 no-padding lib-item" data-category="view">
+                    <div class="lib-panel">
+                        <div class="row box-shadow">
+                            <div class="col-md-8">
+                                <a data-toggle="modal" data-target=".pop-up-1">
+                                    <img class="lib-img-show" src="../../../images/childcare.jpg" /> 
 
-            <!--<agm-map [latitude]="lat" [longitude]="lng"></agm-map>-->
-        </div>
+                                </a>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="lib-row lib-header">
+                                    Example library
+                                    <div class="lib-header-seperator"></div>
+                                </div>
+                                <div class="lib-row lib-desc">
+                                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-margin-bottom">
+                    <div class="col-md-10 no-padding lib-item" data-category="view">
+                        <div class="lib-panel">
+                            <div class="row box-shadow">
+                                <div class="col-md-8">
+                                    <a data-toggle="modal" data-target=".pop-up-1">
+                                        <img class="lib-img-show" src="../../../images/childcare.jpg" />
+
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="lib-row lib-header">
+                                        Example library
+                                        <div class="lib-header-seperator"></div>
+                                    </div>
+                                    <div class="lib-row lib-desc">
+                                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
 
         <div class="span4">
             <h2>Snail mail</h2>

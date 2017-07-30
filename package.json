@@ -32,6 +32,7 @@
     "json-loader": "0.5.4",
     "local-storage": "^1.4.2",
     "ng4-geoautocomplete": "0.0.9",
+    "ngx-dropdown": "0.0.22",
     "preboot": "4.5.2",
     "raw-loader": "0.5.1",
     "reflect-metadata": "0.1.10",
